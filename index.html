@@ -16,10 +16,24 @@
     .results { margin-top: 8px; }
     a { word-break: break-word; }
     .links { margin-top: 18px; padding-top: 14px; border-top: 1px solid #eee; }
+
     .chips { margin: 14px 0 18px; }
-    .chip { display:inline-block; padding:6px 10px; margin:0 8px 8px 0; border:1px solid #e6e6e6; border-radius:999px; font-size:13px; }
-    .quicklinks strong { display:block; margin-bottom:6px; }
-    .updated { font-size:13px; margin-top:6px; display:block; }
+    .chip-link {
+      display:inline-block;
+      padding:6px 10px;
+      margin:0 8px 8px 0;
+      border:1px solid #e6e6e6;
+      border-radius:999px;
+      font-size:13px;
+      text-decoration:none;
+      color:#111;
+      background:#fff;
+    }
+    .chip-link:hover {
+      text-decoration: underline;
+      border-color:#cfcfcf;
+      background:#fafafa;
+    }
   </style>
 </head>
 <body>
@@ -29,26 +43,15 @@
       Practical case studies and playbooks focused on measurable outcomes: growth, conversion, on-site search and merchandising, risk and payments, and automation.
     </p>
     <p class="muted" style="margin-top:-4px;">
-      E-commerce case studies and operator playbooks from production systems.
+      Explore by topic:
     </p>
 
     <div class="chips">
-      <span class="chip">Search</span>
-      <span class="chip">Merchandising</span>
-      <span class="chip">Conversion</span>
-      <span class="chip">Payments</span>
-      <span class="chip">Risk</span>
-      <span class="chip">Automation</span>
-      <span class="chip">SEO</span>
-    </div>
-
-    <div class="card quicklinks" style="margin-top:0;">
-      <strong>Quick links</strong>
-      <a href="https://www.alexgranovskiy.com/tag/case-studies/">All case studies</a> ·
-      <a href="https://www.alexgranovskiy.com/tag/playbooks/">All playbooks</a> ·
-      <a href="https://www.alexgranovskiy.com/">Main site</a> ·
-      <a href="https://www.linkedin.com/in/alexander-granovskiy/">LinkedIn</a>
-      <span class="muted updated">Last updated: Feb 2026</span>
+      <a class="chip-link" href="https://www.alexgranovskiy.com/tag/checkout-order/">Checkout &amp; Orders</a>
+      <a class="chip-link" href="https://www.alexgranovskiy.com/tag/search-discovery/">Search &amp; Discovery</a>
+      <a class="chip-link" href="https://www.alexgranovskiy.com/tag/usability/">Usability</a>
+      <a class="chip-link" href="https://www.alexgranovskiy.com/tag/marketing/">Marketing</a>
+      <a class="chip-link" href="https://www.alexgranovskiy.com/tag/trust-risk/">Trust &amp; Risk</a>
     </div>
 
     <h2>Featured case studies</h2>
