@@ -29,11 +29,7 @@
       color:#111;
       background:#fff;
     }
-    .chip-link:hover {
-      text-decoration: underline;
-      border-color:#cfcfcf;
-      background:#fafafa;
-    }
+    .chip-link:hover { text-decoration: underline; border-color:#cfcfcf; background:#fafafa; }
 
     .section-hero {
       display:block;
@@ -45,30 +41,32 @@
       text-decoration:none;
       color:#111;
     }
+
+    /* Show the image fully (no cropping) */
+    .hero-img-wrap {
+      background: #f6f6f6;
+      padding: 10px;
+    }
     .section-hero img {
       width: 100%;
-      height: 210px;
-      object-fit: cover;
+      height: auto;
       display:block;
+      border-radius: 10px;
     }
-    .section-hero .cap {
-      padding: 12px 14px;
+
+    /* Keep it from becoming too tall */
+    .hero-img-max {
+      max-height: 240px;
+      overflow: hidden;
     }
-    .section-hero .cap strong {
-      display:block;
-      margin-bottom: 2px;
-      font-size: 16px;
-    }
-    .section-hero .cap span {
-      color:#444;
-      font-size: 13px;
-    }
-    .section-hero:hover {
-      border-color:#cfcfcf;
-      background:#fafafa;
-    }
+
+    .section-hero .cap { padding: 12px 14px; }
+    .section-hero .cap strong { display:block; margin-bottom: 2px; font-size: 16px; }
+    .section-hero .cap span { color:#444; font-size: 13px; }
+    .section-hero:hover { border-color:#cfcfcf; background:#fafafa; }
+
     @media (max-width: 780px) {
-      .section-hero img { height: 190px; }
+      .hero-img-max { max-height: 200px; }
     }
   </style>
 </head>
@@ -79,10 +77,7 @@
       Practical case studies and playbooks focused on measurable outcomes: growth, conversion, on-site search and merchandising, risk and payments, and automation.
     </p>
 
-    <p class="muted" style="margin-top:10px;">
-      Explore by topic:
-    </p>
-
+    <p class="muted" style="margin-top:10px;">Explore by topic:</p>
     <div class="chips">
       <a class="chip-link" href="https://www.alexgranovskiy.com/tag/checkout-order/">Checkout &amp; Orders</a>
       <a class="chip-link" href="https://www.alexgranovskiy.com/tag/search-discovery/">Search &amp; Discovery</a>
@@ -91,9 +86,11 @@
       <a class="chip-link" href="https://www.alexgranovskiy.com/tag/trust-risk/">Trust &amp; Risk</a>
     </div>
 
-    <!-- Case studies hero image (right before Featured case studies) -->
+    <!-- Case studies hero image (no cropping) -->
     <a class="section-hero" href="https://www.alexgranovskiy.com/tag/case-studies/">
-      <img src="https://www.alexgranovskiy.com/content/images/size/w2000/2026/01/case-studies.jpg" alt="Case studies">
+      <div class="hero-img-wrap hero-img-max">
+        <img src="https://www.alexgranovskiy.com/content/images/size/w2000/2026/01/case-studies.jpg" alt="Case studies">
+      </div>
       <div class="cap">
         <strong>Case studies</strong>
         <span>Results, systems, and implementation notes</span>
@@ -138,9 +135,11 @@
       </p>
     </div>
 
-    <!-- Playbooks hero image (right before Featured playbooks) -->
+    <!-- Playbooks hero image (no cropping) -->
     <a class="section-hero" href="https://www.alexgranovskiy.com/tag/playbooks/">
-      <img src="https://www.alexgranovskiy.com/content/images/size/w2000/2026/01/playbooks.jpg" alt="Playbooks">
+      <div class="hero-img-wrap hero-img-max">
+        <img src="https://www.alexgranovskiy.com/content/images/size/w2000/2026/01/playbooks.jpg" alt="Playbooks">
+      </div>
       <div class="cap">
         <strong>Playbooks</strong>
         <span>Operator checklists, scorecards, and repeatable processes</span>
