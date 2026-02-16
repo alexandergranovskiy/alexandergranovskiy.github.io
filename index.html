@@ -31,42 +31,17 @@
     }
     .chip-link:hover { text-decoration: underline; border-color:#cfcfcf; background:#fafafa; }
 
-    .section-hero {
-      display:block;
-      margin: 16px 0 10px;
+    .banner {
+      margin: 18px 0 10px;
       border: 1px solid #e6e6e6;
       border-radius: 12px;
       overflow: hidden;
-      background:#fff;
-      text-decoration:none;
-      color:#111;
+      background: #fff;
     }
-
-    /* Show the image fully (no cropping) */
-    .hero-img-wrap {
-      background: #f6f6f6;
-      padding: 10px;
-    }
-    .section-hero img {
+    .banner img {
       width: 100%;
       height: auto;
-      display:block;
-      border-radius: 10px;
-    }
-
-    /* Keep it from becoming too tall */
-    .hero-img-max {
-      max-height: 240px;
-      overflow: hidden;
-    }
-
-    .section-hero .cap { padding: 12px 14px; }
-    .section-hero .cap strong { display:block; margin-bottom: 2px; font-size: 16px; }
-    .section-hero .cap span { color:#444; font-size: 13px; }
-    .section-hero:hover { border-color:#cfcfcf; background:#fafafa; }
-
-    @media (max-width: 780px) {
-      .hero-img-max { max-height: 200px; }
+      display: block;
     }
   </style>
 </head>
@@ -86,16 +61,9 @@
       <a class="chip-link" href="https://www.alexgranovskiy.com/tag/trust-risk/">Trust &amp; Risk</a>
     </div>
 
-    <!-- Case studies hero image (no cropping) -->
-    <a class="section-hero" href="https://www.alexgranovskiy.com/tag/case-studies/">
-      <div class="hero-img-wrap hero-img-max">
-        <img src="https://www.alexgranovskiy.com/content/images/size/w2000/2026/01/case-studies.jpg" alt="Case studies">
-      </div>
-      <div class="cap">
-        <strong>Case studies</strong>
-        <span>Results, systems, and implementation notes</span>
-      </div>
-    </a>
+    <div class="banner">
+      <img src="assets/case-studies.jpg" alt="Case studies">
+    </div>
 
     <h2>Featured case studies</h2>
 
@@ -135,16 +103,9 @@
       </p>
     </div>
 
-    <!-- Playbooks hero image (no cropping) -->
-    <a class="section-hero" href="https://www.alexgranovskiy.com/tag/playbooks/">
-      <div class="hero-img-wrap hero-img-max">
-        <img src="https://www.alexgranovskiy.com/content/images/size/w2000/2026/01/playbooks.jpg" alt="Playbooks">
-      </div>
-      <div class="cap">
-        <strong>Playbooks</strong>
-        <span>Operator checklists, scorecards, and repeatable processes</span>
-      </div>
-    </a>
+    <div class="banner" style="margin-top:22px;">
+      <img src="assets/playbooks.jpg" alt="Playbooks">
+    </div>
 
     <h2>Featured playbooks</h2>
 
