@@ -35,46 +35,40 @@
       background:#fafafa;
     }
 
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 14px;
-      margin: 18px 0 8px;
-    }
-    .hero {
+    .section-hero {
+      display:block;
+      margin: 16px 0 10px;
       border: 1px solid #e6e6e6;
       border-radius: 12px;
       overflow: hidden;
-      background: #fff;
-      text-decoration: none;
-      color: #111;
-      display: block;
+      background:#fff;
+      text-decoration:none;
+      color:#111;
     }
-    .hero img {
+    .section-hero img {
       width: 100%;
-      height: 220px;
+      height: 210px;
       object-fit: cover;
-      display: block;
+      display:block;
     }
-    .hero .cap {
+    .section-hero .cap {
       padding: 12px 14px;
     }
-    .hero .cap strong {
-      display: block;
-      margin-bottom: 4px;
+    .section-hero .cap strong {
+      display:block;
+      margin-bottom: 2px;
       font-size: 16px;
     }
-    .hero .cap span {
-      color: #444;
+    .section-hero .cap span {
+      color:#444;
       font-size: 13px;
     }
-    .hero:hover {
-      border-color: #cfcfcf;
-      background: #fafafa;
+    .section-hero:hover {
+      border-color:#cfcfcf;
+      background:#fafafa;
     }
     @media (max-width: 780px) {
-      .hero-grid { grid-template-columns: 1fr; }
-      .hero img { height: 200px; }
+      .section-hero img { height: 190px; }
     }
   </style>
 </head>
@@ -84,24 +78,6 @@
     <p class="muted">
       Practical case studies and playbooks focused on measurable outcomes: growth, conversion, on-site search and merchandising, risk and payments, and automation.
     </p>
-
-    <div class="hero-grid">
-      <a class="hero" href="https://www.alexgranovskiy.com/tag/case-studies/">
-        <img src="https://www.alexgranovskiy.com/content/images/size/w2000/2026/01/case-studies.jpg" alt="Case studies">
-        <div class="cap">
-          <strong>Case studies</strong>
-          <span>Results, systems, and implementation notes</span>
-        </div>
-      </a>
-
-      <a class="hero" href="https://www.alexgranovskiy.com/tag/playbooks/">
-        <img src="https://www.alexgranovskiy.com/content/images/size/w2000/2026/01/playbooks.jpg" alt="Playbooks">
-        <div class="cap">
-          <strong>Playbooks</strong>
-          <span>Operator checklists, scorecards, and repeatable processes</span>
-        </div>
-      </a>
-    </div>
 
     <p class="muted" style="margin-top:10px;">
       Explore by topic:
@@ -114,6 +90,15 @@
       <a class="chip-link" href="https://www.alexgranovskiy.com/tag/marketing/">Marketing</a>
       <a class="chip-link" href="https://www.alexgranovskiy.com/tag/trust-risk/">Trust &amp; Risk</a>
     </div>
+
+    <!-- Case studies hero image (right before Featured case studies) -->
+    <a class="section-hero" href="https://www.alexgranovskiy.com/tag/case-studies/">
+      <img src="https://www.alexgranovskiy.com/content/images/size/w2000/2026/01/case-studies.jpg" alt="Case studies">
+      <div class="cap">
+        <strong>Case studies</strong>
+        <span>Results, systems, and implementation notes</span>
+      </div>
+    </a>
 
     <h2>Featured case studies</h2>
 
@@ -152,6 +137,15 @@
         <a href="https://www.alexgranovskiy.com/case-study-semantic-query-clustering-engine/">https://www.alexgranovskiy.com/case-study-semantic-query-clustering-engine/</a>
       </p>
     </div>
+
+    <!-- Playbooks hero image (right before Featured playbooks) -->
+    <a class="section-hero" href="https://www.alexgranovskiy.com/tag/playbooks/">
+      <img src="https://www.alexgranovskiy.com/content/images/size/w2000/2026/01/playbooks.jpg" alt="Playbooks">
+      <div class="cap">
+        <strong>Playbooks</strong>
+        <span>Operator checklists, scorecards, and repeatable processes</span>
+      </div>
+    </a>
 
     <h2>Featured playbooks</h2>
 
