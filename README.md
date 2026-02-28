@@ -5,7 +5,7 @@ This repo hosts my GitHub Pages index.
 Live page:
 https://alexandergranovskiy.github.io/
 
-Main site:
+Canonical profile:
 https://www.alexgranovskiy.com/
 
 Collections:
